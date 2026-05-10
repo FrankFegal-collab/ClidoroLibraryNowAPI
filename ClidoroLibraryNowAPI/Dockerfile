@@ -12,4 +12,4 @@ RUN dotnet publish "ClidoroLibraryNowAPI/ClidoroLibraryNowAPI.csproj" -c Release
 FROM base AS final
 WORKDIR /app
 COPY --from=build /app/out .
-ENTRYPOINT ["dotnet", "ClidoroLibraryNowAPI.dll"]S
+ENTRYPOINT ["dotnet", "ClidoroLibraryNowAPI.dll"]
